@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="shortcut icon" href="WEBBER.png">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="col-1">
+      <h1 class="title">Client-Side Form Validation Using JavaScript</h1>
+      <ol class="content">
+        <li>First & Last Name Must Be String</li>
+        <li>Email Address EX: saif@gmail.com</li>
+        <li>Password Must have 8 char, Uppercase, Lowercase, 1-digit, Special Char @</li>
+        <li>Password & Confirm Password Must Match</li>
+      </ol>
+    </div>
+
+    <div class="col-2">
+      <div class="container">
+        <div class="form__container">
+          <form action="" autocomplete="off" id="form">
+            <!-- FIRSTNAME INPUT -->
+            <div class="input">
+              <label for="firstname">First Name:</label>
+              <input
+                type="text"
+                name=""
+                id="firstname"
+                placeholder="First Name"
+                
+              />
+              <div id="first__name__err"></div>
+            </div>
+            <!-- LASTNAME INPUT -->
+            <div class="input">
+              <label for="lastname">Last Name:</label>
+              <input
+                type="text"
+                name=""
+                id="lastname"
+                placeholder="Last Name"
+              />
+              <div id="last__name__err"></div>
+            </div>
+
+            <!-- Email INPUT -->
+            <div class="input">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                name=""
+                id="email"
+                placeholder="Email"
+              />
+              <div id="email__name__err" ></div>
+            </div>
+
+            <!-- PASSWORD INPUT -->
+            <div class="input">
+              <label for="password">Password:</label>
+              <input
+                type="password"
+                name=""
+                id="password"
+                placeholder="Password"
+              />
+              <div id="password__name__err"></div>
+            </div>
+            <!-- CONFIRM PASSWORD INPUT -->
+            <div class="input">
+              <label for="confirmpass">Confirm Password:</label>
+              <input
+                type="password"
+                name=""
+                id="confirmpass"
+                placeholder="Confirm Password"
+              />
+              <div id="confirm__name__err"></div>
+            </div>
+
+            <!-- BUTTON INPUT -->
+            <div class="input__Submit">
+              <input type="submit" value="Submit" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
